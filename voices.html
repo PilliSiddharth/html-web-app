@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="https://i.imgflip.com/3bovka.png?a464568">
+
+<!-- <audio id='music' controls autoplay> -->
+
+    <audio id='music' controls autoplay>
+
+        <source src="" type="audio/mpeg">
+      
+      </audio>
+      
+        <script>
+          function myFunction() {
+             fileArray = ["voices/1.aac", "voices/2.m4a", "voices/3.m4a","voices/4.m4a"];
+             var num = Math.floor(Math.random() * fileArray.length);
+             var x = document.getElementById("music");
+             x.src = fileArray[num]; 
+      
+             var audio = document.getElementById("music");
+             audio.volume = 0.2;
+             audio.autoplay = true;
+             audio.load();
+          }
+      
+          myFunction()
+      
+        </script>
+</body>
+</html>
+
